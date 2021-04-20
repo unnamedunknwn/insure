@@ -1,0 +1,35 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav_link {
+    margin-left: 30px;  
+    position: relative;
+    font-size: 10px;
+    font-weight: bold;
+    color: @gray;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .2s linear;
+
+    &:hover {
+        color: @black;
+        
+    }
+
+    &-btn {
+        border: 2px @black solid;
+        padding: 10px 25px;
+        color: @black;
+        transition: background-color .2s linear, color .2s linear;
+    }
+
+    &-btn:hover {
+        color: @white;
+        background-color: @black;
+    }
+}
